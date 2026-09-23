@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>CETRAK CETRUK LAMPU JAVASCRIPT</title>
+</head>
+
+<body>
+    <div class="flex min-h-screen w-full bg-pink-500">
+        <!-- Ruang Keluarga -->
+        <div class="flex gap-10 py-20 ml-20">
+        <!-- lampu 1 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu1" />
+            <label for="AcceptConditions1"
+                class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions1" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+
+        <!-- lampu 2 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu2" />
+            <label for="AcceptConditions2"
+                class="relative block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions2" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+
+        <!--lampu 3 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu3" />
+            <label for="AcceptConditions3"
+                class="relative block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions3" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+        </div>
+        <!-- ruang keluarga end -->
+
+        <!-- ruang makan -->
+        <div class="flex gap-10 py-80 ml-50">
+        <!-- lampu 4 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu4" />
+            <label for="AcceptConditions4"
+                class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions4" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+        </div>
+        <!-- ruang makan end -->
+
+        <!-- ruang tidur -->
+        <div class="flex gap-10 py-20 ml-50">
+            <!-- lampu 5 -->
+            <div class="flex flex-col items-center gap-2">
+                <img src="assets/image/off.gif" alt="" id="lampu5" />
+                <label for="AcceptConditions5"
+                    class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                    <input type="checkbox" id="AcceptConditions5" class="peer sr-only" onchange="saklar()" />
+                    <span
+                        class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                    </span>
+                </label>
+            </div>
+            <!-- lampu 6 -->
+            <div class="flex flex-col items-center gap-2">
+                <img src="assets/image/off.gif" alt="" id="lampu6" />
+                <label for="AcceptConditions6"
+                    class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                    <input type="checkbox" id="AcceptConditions6" class="peer sr-only" onchange="saklar()" />
+                    <span
+                        class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                    </span>
+                </label>
+            </div>
+        </div>
+            <!-- ruang tidur end -->
+
+        <!-- ruang tamu -->
+        <div class=" flex py-100 gap-10 mr-20">
+        <!-- lampu 7 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu7" />
+            <label for="AcceptConditions7"
+                class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions7" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+        <!-- lampu 8 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu8" />
+            <label for="AcceptConditions8"
+                class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions8" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+        <!-- lampu 9 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu9" />
+            <label for="AcceptConditions9"
+                class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions9" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+        <!-- lampu 10 -->
+        <div class="flex flex-col items-center gap-2">
+            <img src="assets/image/off.gif" alt="" id="lampu10" />
+            <label for="AcceptConditions10"
+                class="relative justify-center block h-8 w-14 rounded-full bg-red-800 transition-colors [-webkit-tap-highlight-color:transparent] has-checked:bg-green-500">
+                <input type="checkbox" id="AcceptConditions10" class="peer sr-only" onchange="saklar()" />
+                <span
+                    class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6">
+                </span>
+            </label>
+        </div>
+        </div>
+        <!-- ruang tamu end -->
+    </div>
+
+    <!-- ini adalah script js kita -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="saklar.js" type="application/javascript"></script>
+</body>
+
+</html>
